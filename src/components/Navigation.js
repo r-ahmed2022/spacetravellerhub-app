@@ -13,21 +13,11 @@ const Navbar = () => {
                 </div>
                 <ul className="nav-items">
                 <li>
-                    <NavLink to="/"
-                        style={({ isActive }) =>
-                        isActive ? activeStyle : undefined
-                      }
-                    >Rocket
+                    <NavLink to="/">Rocket
                     </NavLink>
                 </li>
-                <li><NavLink  to="mission"
-                       style={({ isActive }) =>
-                       isActive ? activeStyle : undefined
-                     }>Missions</NavLink></li>
-                <li><NavLink  to="profile"
-                        style={({ isActive }) =>
-                        isActive ? activeStyle : undefined
-                      }>My Profile</NavLink></li>
+                <li><NavLink  to="mission">Missions</NavLink></li>
+                <li><NavLink  to="profile">My Profile</NavLink></li>
                 </ul>
             </nav>
         </header>

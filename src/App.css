@@ -1,9 +1,43 @@
-#root {
-  max-width: 1280px;
-  height: 100%;
-  margin: 0 auto;
-  padding: 2em;
-  text-align: center;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.4;
+  color: #444;
+  background: rgb(255, 255, 255);
+  height: 100vh;
 }
 
 
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2% 5% 2% 5%;
+  background-color: white;
+  gap: 60px;
+  
+}
+
+.nav-items {
+  display: flex;
+  gap: 60px;
+  margin-left: -200px;
+}
+
+.nav-items li {
+  list-style: none;
+}
+
+.nav-items li a {
+  text-decoration: none;
+  
+}
+
+.nav-items li a.active{
+  text-decoration: underline;
+}
