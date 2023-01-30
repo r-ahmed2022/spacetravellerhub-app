@@ -12,7 +12,6 @@ body {
   height: 100vh;
 }
 
-
 nav {
   display: flex;
   justify-content: space-between;
@@ -20,7 +19,6 @@ nav {
   padding: 2% 5% 2% 5%;
   background-color: white;
   gap: 60px;
-  
 }
 
 .nav-items {
@@ -35,9 +33,8 @@ nav {
 
 .nav-items li a {
   text-decoration: none;
-  
 }
 
-.nav-items li a.active{
+.nav-items li a.active {
   text-decoration: underline;
 }
