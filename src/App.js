@@ -8,12 +8,12 @@ import Rocket from './pages/Rocket';
 function App() {
   return (
     <BrowserRouter>
-          <Navbar />
-          <Routes>
-            <Route path="/" element={<Rocket />} />
-            <Route path="mission" element={<Mission />} />
-            <Route path="profile" element={<MyProfile />} />
-          </Routes>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Rocket />} />
+        <Route path="mission" element={<Mission />} />
+        <Route path="profile" element={<MyProfile />} />
+      </Routes>
     </BrowserRouter>
 
   );
