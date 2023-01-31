@@ -1,3 +1,17 @@
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  color: #444;
+  background: rgb(255, 255, 255);
+  height: 100vh;
+}
+
 nav {
   display: flex;
   justify-content: space-between;
@@ -53,10 +67,21 @@ table {
   border-collapse: collapse;
 }
 
+table td,
+table th {
+  border: 1px solid #444;
+}
+
 table th {
   text-align: left;
   background-color: white;
   border: 1px solid #444;
+}
+
+.mission-list th,
+tr {
+  padding: 0.3em 0.5em;
+  border-bottom: 1px solid #fff;
 }
 
 table td {
@@ -70,6 +95,10 @@ table td {
   color: #000;
   font-weight: 700;
   font-size: 1.5em;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .mission-list td {
@@ -135,13 +164,6 @@ button {
   color: #fff;
   text-align: center;
   margin-top: 1.5em;
-}
-
-.missionlist {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 .mission-Card {
