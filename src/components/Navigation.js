@@ -1,19 +1,20 @@
+import React from 'react';
 import { NavLink } from 'react-router-dom';
+import img from '../assets/planet.png';
 
 const Navbar = () => (
   <header>
     <nav>
-      <div>
-        <h1 className="logo">Space logo</h1>
+      <div className="logo-img">
+        <img src={img} className="logo-img" alt="space pic" />
+        <h2>Space Traveller Hub</h2>
       </div>
       <ul className="nav-items">
         <li>
-          <NavLink to="/">
-            Rocket
-          </NavLink>
+          <NavLink className="link" to="/">Rockets</NavLink>
         </li>
-        <li><NavLink to="mission">Missions</NavLink></li>
-        <li><NavLink to="profile">My Profile</NavLink></li>
+        <li><NavLink className="link" to="/mission">Missions</NavLink></li>
+        <li><NavLink className="link" to="/profile">Profile</NavLink></li>
       </ul>
     </nav>
   </header>
