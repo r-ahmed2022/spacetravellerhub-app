@@ -14,9 +14,9 @@ export default function Rocket(props) {
         <img className="rocket-img" src={rocket.flickr_images[0]} alt="pic" />
       </div>
       <div className="rocket-info">
-        <h4>{rocket.name}</h4>
+        <h3>{rocket.rocket_name}</h3>
         <p>{rocket.description}</p>
-        <span className="" />
+        <span className={!rocket.reserved ? 'member-badge' : 'non-member-badge'}>{rocket.reserved ? ' ' : 'Reserved'}</span>
         <button type="button" className="active" onClick={() => setReserve(rocket)}>{rocket.reserved ? 'Reserve' : 'Cancel'}</button>
       </div>
 
