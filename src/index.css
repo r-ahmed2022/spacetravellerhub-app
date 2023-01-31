@@ -8,4 +8,41 @@ body {
   font-family: "Montserrat", sans-serif;
   color: #444;
   height: 100vh;
+  padding: 0 2em;
 }
+
+.bookings {
+  width: 100%;
+  height: 600px;
+  display : grid;
+  grid-template-areas: "rockets missions";
+  margin: 1em auto;
+  padding: .5em;
+}
+
+.bookings div h1{
+  margin: .5em 0;
+
+}
+
+.rocket-bookings {
+  grid-area: rockets;
+  border: 1px solid #000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #000;
+}
+
+.rocket-bookings li {
+  list-style: none;
+}
+
+.mission-bookings {
+  grid-area: missions;
+  border: 1px solid #000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
