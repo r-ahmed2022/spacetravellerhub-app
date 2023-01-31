@@ -1,14 +1,3 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  font-family: "Montserrat", sans-serif;
-  color: #444;
-  height: 100vh;
-}
 
 nav {
   display: flex;
@@ -19,14 +8,13 @@ nav {
 }
 
 .logo-img {
-  width: 200px;
   display: flex;
   width: 20%;
   height: 30%;
 }
 
 .logo-img h2 {
-  margin: .2em;
+  margin: 0.2em;
 }
 
 .nav-items {
@@ -36,8 +24,8 @@ nav {
 
 .nav-items li {
   list-style: none;
-  margin: .2em .4em;
-  padding: 0 .4em;
+  margin: 0.2em 0.4em;
+  padding: 0 0.4em;
   background: #ccc;
 }
 
@@ -146,10 +134,10 @@ td {
 .join-mission-btn {
   width: 100px;
   height: 30px;
-  margin: .2em 10px;
+  margin: 0.2em 10px;
   padding: 1em 1.2em;
   border-radius: 5px;
-  font-size: .8em;
+  font-size: 0.8em;
   text-align: center;
   border: none;
   font-weight: bold;
