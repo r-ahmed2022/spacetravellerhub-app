@@ -14,15 +14,14 @@ body {
 .bookings {
   width: 100%;
   height: 600px;
-  display : grid;
+  display: grid;
   grid-template-areas: "rockets missions";
   margin: 1em auto;
-  padding: .5em;
+  padding: 0.5em;
 }
 
-.bookings div h1{
-  margin: .5em 0;
-
+.bookings div h1 {
+  margin: 0.5em 0;
 }
 
 .rocket-bookings {
@@ -45,4 +44,3 @@ body {
   flex-direction: column;
   align-items: center;
 }
-
