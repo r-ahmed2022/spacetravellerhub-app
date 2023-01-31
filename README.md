@@ -142,9 +142,9 @@ This project would be deployed using github pages:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **Space station page**
-- [ ] **Award page**
-- [ ] **Competition page**
+- [ ] **Rocket Page**
+- [ ] **Mission Page**
+- [ ] **Profile Page**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
