@@ -75,12 +75,25 @@ table th {
 table th {
   text-align: left;
   background-color: white;
+  border: 1px solid #444;
 }
 
 .mission-list th,
 tr {
   padding: 0.3em 0.5em;
   border-bottom: 1px solid #fff;
+  
+table td {
+  border: 1px solid #444;
+}
+
+.mission-list th {
+  padding: 0.3em 0.5em;
+  border-bottom: 1px solid #fff;
+  background: #fff;
+  color: #000;
+  font-weight: 700;
+  font-size: 1.5em;
 }
 
 .mission-list td {
