@@ -1,10 +1,16 @@
-import React from 'react'
-import { useSelector, } from 'react-redux';
+import { useEffect } from 'react';
+import { useSelector,useDispatch } from 'react-redux';
 import MissionList from "../components/MissionList"
+import { getMissionAction } from '../redux/Missions/mission';
 
 
 
 const Mission = () => {
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(getMissionAction());
+  }, [dispatch]);
 
     const missionstore = useSelector((state) => state.mission);
 

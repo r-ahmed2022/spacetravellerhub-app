@@ -3,13 +3,24 @@ import EachMission from './EachMission';
 
 const MissionList =(props) => {
     const {missions} = props;
-
   return (
-    <div>{missions.map((mission) => (
-      <EachMission key={mission} mission = {mission} />
+    <table>
+      <thead>
+        <tr className='theader'>
+          <th>Mission</th>
+          <th>Description</th>
+          <th>Status</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        {missions.map((mission) => (
+        <EachMission key={mission.mission_id} mission = {mission} />
+        ))}
+      </tbody> 
       
-    ))}
-    </div>
+  
+    </table>
   )
 }
 
