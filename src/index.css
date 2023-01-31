@@ -1,12 +1,11 @@
-body {
+* {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  height: 100vh;
 }
 
-.container {
-  width: 100%;
-  height: auto;
-  margin: 1em auto;
+body {
+  font-family: "Montserrat", sans-serif;
+  color: #444;
+  height: 100vh;
 }
