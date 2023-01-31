@@ -1,7 +1,25 @@
 import React from 'react';
+import { useDispatch } from 'react-redux';
+import { JOIN_ROCKET } from '../redux/Rockets/rocket';
 
-export default function Rocket() {
+export default function Rocket(props) {
+  const dispatch = useDispatch();
+  const { rocket } = props;
+  const setReserve = (rocket) => {
+    dispatch(JOIN_ROCKET(rocket.id));
+  };
   return (
-    <div>Rocket</div>
+    <div className="rocket">
+      <div className="rocket-img-div">
+        <img className="rocket-img" src={rocket.flickr_images[0]} alt="pic" />
+      </div>
+      <div className="rocket-info">
+        <h4>{rocket.name}</h4>
+        <p>{rocket.description}</p>
+        <span className="" />
+        <button type="button" className="active" onClick={() => setReserve(rocket)}>{rocket.reserved ? 'Reserve' : 'Cancel'}</button>
+      </div>
+
+    </div>
   );
 }
