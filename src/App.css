@@ -1,10 +1,15 @@
-
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 2% 5% 2% 5%;
   background-color: white;
+}
+
+.logo {
+  display: flex;
+  width: 20%;
+  height: 30%;
 }
 
 .logo-img {

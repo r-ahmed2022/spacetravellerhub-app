@@ -5,7 +5,7 @@ import img from '../assets/planet.png';
 const Navbar = () => (
   <header>
     <nav>
-      <div className="logo-img">
+      <div className="logo">
         <img src={img} className="logo-img" alt="space pic" />
         <h2>Space Traveller Hub</h2>
       </div>
