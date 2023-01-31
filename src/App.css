@@ -82,7 +82,8 @@ table th {
 tr {
   padding: 0.3em 0.5em;
   border-bottom: 1px solid #fff;
-  
+}
+
 table td {
   border: 1px solid #444;
 }
@@ -94,6 +95,10 @@ table td {
   color: #000;
   font-weight: 700;
   font-size: 1.5em;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .mission-list td {
@@ -161,26 +166,12 @@ button {
   margin-top: 1.5em;
 }
 
-.missionlist {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 .mission-Card {
   width: auto;
   height: auto;
   margin: 0.5em 1em;
   color: #fff;
   cursor: pointer;
-}
-
-.mission-list th {
-  background: #fff;
-  color: #000;
-  font-weight: 700;
-  font-size: 1.5em;
 }
 
 .desc {
