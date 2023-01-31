@@ -10,13 +10,13 @@ const Mission = () => {
     dispatch(LIST_MISSIONS());
   }, [dispatch]);
 
-  const {list} = useSelector((state) => state?.mission);
+  const {missionList} = useSelector((state) => state?.mission);
   
  
 
   return (
     <div>
-      <MissionList  missions={list} />
+      <MissionList  missions={missionList} />
     </div>
   );
 };
