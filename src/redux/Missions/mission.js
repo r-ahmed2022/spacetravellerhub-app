@@ -1,15 +1,29 @@
-const STATUS_CHECKED = 'STATUS_CHECKED';
+import { createAsyncThunk } from '@reduxjs/toolkit';
 
-const missionStatusAction = () => ({
-  type: STATUS_CHECKED,
-});
+const URL = 'https://api.spacexdata.com/v3/missions';
+
+const GET_MISSION = 'GET_MISSION';
+
+const getMissionAction = createAsyncThunk(
+  GET_MISSION,
+  async (post, { dispatch }) => {
+    const response = await fetch(URL);
+    const data = await response.json();
+    const mission = data;
+
+    dispatch({
+      type: GET_MISSION,
+      payload: mission,
+    });
+  },
+);
 
 const missionReducer = (state = [], action = {}) => {
   switch (action.type) {
-    case STATUS_CHECKED: return 'Under construction';
+    case GET_MISSION: return action.payload;
     default: return state;
   }
 };
 
-export { missionStatusAction };
+export { getMissionAction };
 export default missionReducer;

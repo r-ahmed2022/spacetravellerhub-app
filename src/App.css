@@ -13,10 +13,6 @@ nav {
   height: 30%;
 }
 
-.logo-img h2 {
-  margin: 0.2em;
-}
-
 .nav-items {
   display: flex;
   align-items: center;
@@ -169,4 +165,23 @@ td {
 .leave-mission-btn {
   border: 1px solid rgb(255, 70, 70);
   color: rgb(255, 70, 70);
+}
+
+table {
+  margin: 0 5%;
+  border-collapse: collapse;
+}
+
+table td,
+table th {
+  border: 1px solid #444;
+}
+
+table tr:nth-child(odd) { background-color: #f2f2f2; }
+
+table tr:hover { background-color: #ddd; }
+
+table th {
+  text-align: left;
+  background-color: white;
 }
