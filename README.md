@@ -133,9 +133,8 @@ This project would be deployed using github pages:
 
 👤 **Richard O.I**
 
-- GitHub: [@githubhandle](https://github.com/XRichardroidX)
-- Twitter: [@twitterhandle](https://twitter.com/RichardroiDX)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/richard-oguzie-ibeh-b4a975231/)
+- GitHub: [@r-ahmed2022](https://github.com/XRichardroidX)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/riyaz-ahmed-4216a71a8/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
