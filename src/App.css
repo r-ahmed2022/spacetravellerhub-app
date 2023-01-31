@@ -18,6 +18,7 @@ nav {
   padding: 2% 5% 2% 5%;
   background-color: white;
   gap: 60px;
+  border-bottom: #d7d8da solid 1px;
 }
 
 .nav-items {
@@ -36,4 +37,23 @@ nav {
 
 .nav-items li a.active {
   text-decoration: underline;
+}
+
+table {
+  margin: 0 5%;
+  border-collapse: collapse;
+}
+
+table td,
+table th {
+  border: 1px solid #444;
+}
+
+table tr:nth-child(odd) { background-color: #f2f2f2; }
+
+table tr:hover { background-color: #ddd; }
+
+table th {
+  text-align: left;
+  background-color: white;
 }
