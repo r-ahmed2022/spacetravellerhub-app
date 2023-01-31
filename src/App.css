@@ -42,11 +42,11 @@ nav {
 }
 
 .nav-items li a {
+  display: block;
   width: 10%;
   text-decoration: none;
   color: #000;
   margin: 0;
-  padding: .3em .4em;
 }
 
 .rocketlist {
