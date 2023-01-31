@@ -44,13 +44,14 @@ table {
   border-collapse: collapse;
 }
 
-table td, table th {
+table td,
+table th {
   border: 1px solid #444;
 }
 
-table tr:nth-child(odd){background-color: #f2f2f2;}
+table tr:nth-child(odd) { background-color: #f2f2f2; }
 
-table tr:hover {background-color: #ddd;}
+table tr:hover { background-color: #ddd; }
 
 table th {
   text-align: left;
