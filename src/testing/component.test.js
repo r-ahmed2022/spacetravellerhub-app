@@ -8,7 +8,7 @@ import store from '../redux/combineStore';
 import Mission from '../pages/Mission';
 import Nav from '../components/Navigation';
 import Profile from '../pages/Profile';
-import Rocket from '../pages/Rocket';
+import RocketList from '../pages/RocketList';
 
 describe('Render All Components', () => {
   test('render navbar', () => {
@@ -18,20 +18,52 @@ describe('Render All Components', () => {
       </MemoryRouter>,
     );
     expect(container.firstChild).toMatchInlineSnapshot(`
-    <nav>
-      <div className="logo">
-        <img src={img} className="logo-img" alt="space pic" />
-        <h2>Space Traveller Hub</h2>
-      </div>
-      <ul className="nav-items">
-        <li>
-          <NavLink className="link" to="/">Rockets</NavLink>
-        </li>
-        <li><NavLink className="link" to="/mission">Missions</NavLink></li>
-        <li><NavLink className="link" to="/profile">My Profile</NavLink></li>
-      </ul>
-    </nav>
-  `);
+<header>
+  <nav>
+    <div
+      class="logo"
+    >
+      <img
+        alt="space pic"
+        class="logo-img"
+        src="planet.png"
+      />
+      <h2>
+        Space Traveller Hub
+      </h2>
+    </div>
+    <ul
+      class="nav-items"
+    >
+      <li>
+        <a
+          aria-current="page"
+          class="link active"
+          href="/"
+        >
+          Rockets
+        </a>
+      </li>
+      <li>
+        <a
+          class="link"
+          href="/mission"
+        >
+          Missions
+        </a>
+      </li>
+      <li>
+        <a
+          class="link"
+          href="/profile"
+        >
+          My Profile
+        </a>
+      </li>
+    </ul>
+  </nav>
+</header>
+`);
   });
 
   test('render Profile', () => {
@@ -43,20 +75,45 @@ describe('Render All Components', () => {
       </MemoryRouter>,
     );
     expect(container.firstChild).toMatchInlineSnapshot(`
-  
-  `);
+<div
+  class="bookings"
+>
+  <div
+    class="rocket-bookings"
+  >
+    <h1>
+      Rocket bookings
+    </h1>
+    <ul
+      class="bookings-list"
+    />
+  </div>
+  <div
+    class="mission-bookings"
+  >
+    <h1>
+      Mission bookings
+    </h1>
+    <ul
+      class="bookings-list"
+    />
+  </div>
+</div>
+`);
   });
 
   test('render Rockets', () => {
     const { container } = render(
       <MemoryRouter>
         <Provider store={store}>
-          <Rocket />
+          <RocketList />
         </Provider>
       </MemoryRouter>,
     );
     expect(container.firstChild).toMatchInlineSnapshot(`
-  
-  `);
+<div
+  class="rocketlist"
+/>
+`);
   });
 });
