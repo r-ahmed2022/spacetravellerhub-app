@@ -4,20 +4,12 @@ import { useSelector } from 'react-redux';
 
 export default function Profile() {
   const { list } = useSelector((state) => state?.rocket);
-  const rocketBookings = list?.map((rocket) => {
-    if (!rocket.reserved) {
-      return (<li className="item" key={rocket.id}>{rocket.name}</li>);
-    }
-    return null;
-  });
+  const filterRoc = list.filter((obj) => obj.reserved === false);
+  const rocketBookings = filterRoc?.map((rocket) => (<li className="item" key={rocket.id}>{rocket.name}</li>));
 
   const { missionList } = useSelector((state) => state?.mission);
-  const missionBookings = missionList?.map((mission) => {
-    if (!mission.reserved) {
-      return (<li className="item" key={mission.mission_id}>{mission.mission_name}</li>);
-    }
-    return null;
-  });
+  const filter = missionList.filter((obj) => obj.reserved === false);
+  const missionBookings = filter?.map((mission) => (<li className="item" key={mission.mission_id}>{mission.mission_name}</li>));
 
   return (
     <div className="bookings">
