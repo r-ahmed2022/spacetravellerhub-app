@@ -231,10 +231,15 @@ button {
   }
   .rocket-info {
    align-items: center; 
+   
  }
 
  .rocket-info p {
   text-align: justify;
   margin-bottom: 1em;
+ }
+
+ .rocket-info span {
+  order: -1;
  }
 }
