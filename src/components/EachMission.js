@@ -11,10 +11,10 @@ const EachMission = (props) => {
   };
   return (
     <tr>
-      <td className='mission-name'>{mission.mission_name}</td>
-      <td className='mission-dscrp'>{mission.description}</td>
-      <td className='member-table'><p className={!mission.reserved ? 'member' : 'non-member'}>{mission.reserved ? 'NOT A MEMBER ' : 'ACTIVE MEMBER'}</p></td>
-      <td className='member-table'><button type="button" className={mission.reserved ? 'jion-mission' : 'leave-mission'} onClick={() => setReserve(mission)}>{mission.reserved ? 'Join Mission' : 'Leave Mission'}</button></td>
+      <td className="mission-name">{mission.mission_name}</td>
+      <td className="mission-dscrp">{mission.description}</td>
+      <td className="member-table"><p className={!mission.reserved ? 'member' : 'non-member'}>{mission.reserved ? 'NOT A MEMBER ' : 'ACTIVE MEMBER'}</p></td>
+      <td className="member-table"><button type="button" className={mission.reserved ? 'jion-mission' : 'leave-mission'} onClick={() => setReserve(mission)}>{mission.reserved ? 'Join Mission' : 'Leave Mission'}</button></td>
     </tr>
 
   );

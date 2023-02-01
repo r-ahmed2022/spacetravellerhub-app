@@ -1,4 +1,3 @@
-
 /* eslint-disable max-len */
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 
@@ -41,4 +40,3 @@ export const missionSlice = createSlice({
 
 export default missionSlice.reducer;
 export const { JOIN_MISSION } = missionSlice.actions;
-

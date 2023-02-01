@@ -11,10 +11,10 @@ export default function Profile() {
     return null;
   });
 
-  const {missionList}= useSelector((state) => state?.mission);
+  const { missionList } = useSelector((state) => state?.mission);
   const missionBookings = missionList?.map((mission) => {
     if (!mission.reserved) {
-      return (<li className='item' key={mission.mission_id}>{mission.mission_name}</li>)
+      return (<li className="item" key={mission.mission_id}>{mission.mission_name}</li>);
     }
     return null;
   });
@@ -30,7 +30,7 @@ export default function Profile() {
       <div className="mission-bookings">
         <h1>Mission bookings</h1>
         <ul className="bookings-list">
-           {missionBookings}
+          {missionBookings}
         </ul>
       </div>
     </div>
