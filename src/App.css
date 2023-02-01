@@ -272,3 +272,7 @@ button {
   font-size: 14px;
   text-align: start;
 }
+
+.bookings-list {
+  list-style: none;
+}
