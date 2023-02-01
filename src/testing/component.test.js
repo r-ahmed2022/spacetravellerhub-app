@@ -121,7 +121,7 @@ describe('Render All Components', () => {
     const { container } = render(
       <MemoryRouter>
         <Provider store={store}>
-          <Mission/>
+          <Mission />
         </Provider>
       </MemoryRouter>,
     );
@@ -155,6 +155,4 @@ describe('Render All Components', () => {
      </div>
     `);
   });
-
-
 });
