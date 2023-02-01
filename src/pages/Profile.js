@@ -22,15 +22,15 @@ export default function Profile() {
   return (
     <div className="bookings">
       <div className="rocket-bookings">
-        <h1>Rocket bookings</h1>
+        <h1>My Missions</h1>
         <ul className="bookings-list">
-          {rocketBookings}
+          {missionBookings}
         </ul>
       </div>
       <div className="mission-bookings">
-        <h1>Mission bookings</h1>
+        <h1>My Rockets</h1>
         <ul className="bookings-list">
-          {missionBookings}
+          {rocketBookings}
         </ul>
       </div>
     </div>

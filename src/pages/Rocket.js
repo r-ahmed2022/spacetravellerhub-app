@@ -17,7 +17,7 @@ export default function Rocket(props) {
         <h3>{rocket.name}</h3>
         <p>{rocket.description}</p>
         <span className={!rocket.reserved ? 'member-badge' : 'non-member-badge'}>{rocket.reserved ? ' ' : 'Reserved'}</span>
-        <button type="button" className="active" onClick={() => setReserve(rocket)}>{rocket.reserved ? 'Reserve' : 'Cancel'}</button>
+        <button type="button" className="activebtn" onClick={() => setReserve(rocket)}>{rocket.reserved ? 'Reserve' : 'Cancel'}</button>
       </div>
 
     </div>
