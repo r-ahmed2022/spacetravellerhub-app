@@ -26,10 +26,10 @@ describe('Render All Components', () => {
       <img
         alt="space pic"
         class="logo-img"
-        src="planet.png"
+        src="blacklogo.png"
       />
       <h2>
-        Space Traveller Hub
+        Space Traveler's Hub
       </h2>
     </div>
     <ul
@@ -54,7 +54,7 @@ describe('Render All Components', () => {
       </li>
       <li>
         <a
-          class="link"
+          class="link prof"
           href="/profile"
         >
           My Profile
@@ -82,7 +82,7 @@ describe('Render All Components', () => {
     class="rocket-bookings"
   >
     <h1>
-      Rocket bookings
+      My Missions
     </h1>
     <ul
       class="bookings-list"
@@ -92,7 +92,7 @@ describe('Render All Components', () => {
     class="mission-bookings"
   >
     <h1>
-      Mission bookings
+      My Rockets
     </h1>
     <ul
       class="bookings-list"
@@ -115,5 +115,44 @@ describe('Render All Components', () => {
   class="rocketlist"
 />
 `);
+  });
+
+  test('render Missions', () => {
+    const { container } = render(
+      <MemoryRouter>
+        <Provider store={store}>
+          <Mission />
+        </Provider>
+      </MemoryRouter>,
+    );
+    expect(container.firstChild).toMatchInlineSnapshot(`
+     <div
+       class="mission"
+     >
+       <table>
+         <thead>
+           <tr
+             class="theader"
+           >
+             <th>
+               Mission
+             </th>
+             <th>
+               Description
+             </th>
+             <th>
+               Status
+             </th>
+             <th
+               class="dot"
+             >
+               ..
+             </th>
+           </tr>
+         </thead>
+         <tbody />
+       </table>
+     </div>
+    `);
   });
 });
