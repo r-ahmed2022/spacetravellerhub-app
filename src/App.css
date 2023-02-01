@@ -16,7 +16,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 2% 5% 2% 5%;
+  padding: 2% 2.5% 2% 3%;
   background-color: white;
   gap: 60px;
   border-bottom: #d7d8da solid 1px;
@@ -24,14 +24,16 @@ nav {
 
 .logo {
   display: flex;
-  width: 20%;
+  align-items: center;
+  width: 40%;
   height: 30%;
+  gap: 10px;
 }
 
 .logo-img {
   display: flex;
-  width: 20%;
-  height: 30%;
+  width: 14%;
+  height: 20%;
 }
 
 .logo-img h2 {
@@ -40,21 +42,23 @@ nav {
 
 .nav-items {
   display: flex;
+  flex-direction: row;
+  justify-content: right;
   align-items: center;
+  width: 40%;
 }
 
 .nav-items li {
   list-style: none;
   margin: 0.2em 0.4em;
   padding: 0 0.4em;
-  background: #ccc;
+  
 }
 
 .nav-items li a {
   display: block;
-  width: 10%;
   text-decoration: none;
-  color: #000;
+  color: blue;
   margin: 0;
 }
 
@@ -62,8 +66,13 @@ nav {
   text-decoration: underline;
 }
 
+.prof {
+  border-left: #444 solid 2px;
+  padding-left: 18px;
+}
+
 table {
-  margin: 0 3%;
+  margin: 1.5% 3%;
   border-collapse: collapse;
 }
 
@@ -150,7 +159,7 @@ button {
   cursor: pointer;
 }
 
-.active {
+.activebtn {
   width: 200px;
   display: block;
   padding: 0.4em 0.7em;
