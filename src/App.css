@@ -242,4 +242,8 @@ button {
  .rocket-info span {
   order: -1;
  }
+
+ .logo-img {
+  width: 25%;
+ }
 }
