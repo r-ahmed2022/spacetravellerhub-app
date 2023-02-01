@@ -27,7 +27,7 @@
 # 📖 spacetravellerhub-app  <a name="about-project"></a>
 
 
-**spacetravellerhub-app**  consists of Rockets, Missions, and the My Profile section.
+**spacetravellerhub-app** is based on data from Space X's API. The Space Travelers' Hub App displays a list of available rockets on its homepage and a list of missions on its mission page. Both lists options can be booked and reserved, and the reserved rocket or mission shows on the profile page..
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -60,7 +60,7 @@
 
 > Add a link to your deployed project.
 
- [Coming Soon...](https://)
+ [Live Version](https://spacetravelerhub.onrender.com/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
