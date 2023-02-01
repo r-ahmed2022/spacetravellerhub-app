@@ -1,6 +1,8 @@
 import React, { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
-import { BrowserRouter, Routes, Route, useLocation  } from 'react-router-dom';
+import {
+  BrowserRouter, Routes, Route,
+} from 'react-router-dom';
 import './App.css';
 import Navbar from './components/Navigation';
 import { LIST_ROCKETS } from './redux/Rockets/rocket';
@@ -9,8 +11,6 @@ import Profile from './pages/Profile';
 import RocketList from './pages/RocketList';
 import { LIST_MISSIONS } from './redux/Missions/mission';
 
-
-
 function App() {
   const dispatch = useDispatch();
   useEffect(() => {
@@ -18,11 +18,8 @@ function App() {
   }, [dispatch]);
 
   useEffect(() => {
-  
-      dispatch(LIST_MISSIONS());
-
-  }, []);
-
+    dispatch(LIST_MISSIONS());
+  }, [dispatch]);
 
   return (
     <BrowserRouter>

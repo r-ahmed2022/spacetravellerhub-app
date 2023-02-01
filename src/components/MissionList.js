@@ -10,7 +10,7 @@ const MissionList = (props) => {
           <th>Mission</th>
           <th>Description</th>
           <th>Status</th>
-          <th></th>
+          <th className="dot">..</th>
         </tr>
       </thead>
       <tbody>
