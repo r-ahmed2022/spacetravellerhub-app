@@ -222,3 +222,19 @@ button {
   border: 1px solid rgb(255, 70, 70);
   color: rgb(255, 70, 70);
 }
+
+@media (max-width: 500px) {
+  .rocket {
+    flex-direction: column;
+    height: auto;
+    align-items: center;
+  }
+  .rocket-info {
+   align-items: center; 
+ }
+
+ .rocket-info p {
+  text-align: justify;
+  margin-bottom: 1em;
+ }
+}
