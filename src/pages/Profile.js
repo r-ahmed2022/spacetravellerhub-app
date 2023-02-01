@@ -4,10 +4,17 @@ import { useSelector } from 'react-redux';
 
 export default function Profile() {
   const { list } = useSelector((state) => state?.rocket);
-  // const { list: mission } = useSelector((state) => state?.mission);
   const rocketBookings = list?.map((rocket) => {
     if (!rocket.reserved) {
       return (<li className="item" key={rocket.id}>{rocket.name}</li>);
+    }
+    return null;
+  });
+
+  const { missionList } = useSelector((state) => state?.mission);
+  const missionBookings = missionList?.map((mission) => {
+    if (!mission.reserved) {
+      return (<li className="item" key={mission.mission_id}>{mission.mission_name}</li>);
     }
     return null;
   });
@@ -23,7 +30,7 @@ export default function Profile() {
       <div className="mission-bookings">
         <h1>Mission bookings</h1>
         <ul className="bookings-list">
-
+          {missionBookings}
         </ul>
       </div>
     </div>
