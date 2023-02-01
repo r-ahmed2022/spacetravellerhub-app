@@ -6,7 +6,7 @@ const Mission = () => {
   const { missionList } = useSelector((state) => state?.mission);
 
   return (
-    <div>
+    <div className="mission">
       <MissionList missions={missionList} />
     </div>
   );
