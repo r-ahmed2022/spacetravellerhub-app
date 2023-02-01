@@ -14,7 +14,7 @@ const Navbar = () => (
           <NavLink className="link" to="/">Rockets</NavLink>
         </li>
         <li><NavLink className="link" to="/mission">Missions</NavLink></li>
-        <li><NavLink className="link" to="/profile">Profile</NavLink></li>
+        <li><NavLink className="link" to="/profile">My Profile</NavLink></li>
       </ul>
     </nav>
   </header>

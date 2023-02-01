@@ -63,7 +63,7 @@ nav {
 }
 
 table {
-  margin: 0 5%;
+  margin: 0 3%;
   border-collapse: collapse;
 }
 
@@ -86,6 +86,7 @@ tr {
 
 table td {
   border: 1px solid #444;
+ 
 }
 
 .mission-list th {
@@ -223,6 +224,7 @@ button {
   color: rgb(255, 70, 70);
 }
 
+<<<<<<< HEAD
 @media (max-width: 500px) {
   .rocket {
     flex-direction: column;
@@ -246,4 +248,57 @@ button {
  .logo-img {
   width: 25%;
  }
+=======
+.non-member,
+.member {
+  padding: 5% 0;
+  width: 100px;
+  border-radius: 2px;
+  font-size: 10px;
+  text-align: center;
+  border: none;
+  font-weight:500;
+  background-color: rgb(116, 116, 116);
+  color: white;
+}
+
+.member {
+  background-color: #1c94b3;
+
+}
+
+.jion-mission,
+.leave-mission {
+  width: 100px;
+  padding: 5% 0;
+  text-align: center;
+}
+
+.leave-mission {
+  color: red;
+    border: red solid 1px;
+    border-radius: 3px;
+}
+
+.member-table {
+  width: 12.5%;
+  padding: 0.5%;
+}
+
+.mission-dscrp {
+  padding: 0.5%;
+  font-size: 12px;
+}
+
+.mission-name {
+  width: 12.5%;
+  padding: 0.5%;
+  font-weight: 600;
+  font-size: 14px;
+  text-align: start;
+}
+
+.bookings-list {
+  list-style: none;
+>>>>>>> cae4c02e97b21d84c1bd039ec04938e8cd1a7730
 }
