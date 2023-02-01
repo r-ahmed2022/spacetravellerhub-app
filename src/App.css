@@ -185,7 +185,7 @@ button {
 .leave-mission-btn,
 .join-mission-btn {
   width: 100px;
-  height: 30px;
+  height: auto;
   margin: 0.2em 10px;
   padding: 1em 1.2em;
   border-radius: 5px;
@@ -197,7 +197,7 @@ button {
 
 .non-member-badge,
 .member-badge {
-  color: white;
+  color: #1C1C1C;
 }
 
 .non-member-badge {
@@ -205,7 +205,7 @@ button {
 }
 
 .member-badge {
-  background-color: #1c94b3;
+  background-color: #00D7C8;
 }
 
 .leave-mission-btn,
@@ -277,4 +277,25 @@ button {
 
 .dot {
   color: white;
+}
+
+@media (max-width: 500px) {
+  .rocket {
+    flex-direction: column;
+    height: auto;
+    align-items: center;
+  }
+  .rocket-info {
+   align-items: center; 
+   
+ }
+
+ .rocket-info p {
+  text-align: justify;
+  margin-bottom: 1em;
+ }
+
+ .rocket-info span {
+  order: -1;
+ }
 }
