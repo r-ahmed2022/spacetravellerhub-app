@@ -125,7 +125,7 @@ This project would be deployed using github pages:
 
 ## 👥 Authors <a name="authors"></a>
 
-👤 **Author1**
+👤 **Chimezie Asouzu**
 
 - GitHub: [@Shegy28](https://github.com/shegy28)
 - Twitter: [@Shegy28](https://twitter.com/twitterhandle)
