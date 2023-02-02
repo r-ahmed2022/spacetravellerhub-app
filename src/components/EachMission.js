@@ -2,7 +2,6 @@ import React from 'react';
 import { useDispatch } from 'react-redux';
 import { JOIN_MISSION } from '../redux/Missions/mission';
 
-/* eslint-disable react/prop-types */
 const EachMission = (props) => {
   const dispatch = useDispatch();
   const { mission } = props;

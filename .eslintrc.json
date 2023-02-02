@@ -20,7 +20,19 @@
       "import/no-unresolved": "off",
       "no-shadow": "off",
       "react/prop-types": "off",
-      "no-param-reassign": 0
+      "no-param-reassign": 0,
+      "max-len": [
+        "error",
+        {
+          "code": 200,
+          "tabWidth": 2,
+          "ignoreComments": true, //"comments": 80
+          "ignoreUrls": true,
+          "ignoreStrings": true,
+          "ignoreTemplateLiterals": true
+        }
+      ]
+      
     },
     "ignorePatterns": [
       "dist/",

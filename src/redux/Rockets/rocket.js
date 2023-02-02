@@ -1,4 +1,3 @@
-/* eslint-disable max-len */
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 
 const rocketsUrl = 'https://api.spacexdata.com/v4/rockets';
