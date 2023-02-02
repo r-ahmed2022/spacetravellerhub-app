@@ -58,9 +58,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-> Add a link to your deployed project.
-
- [Live Version](https://spacetravelerhub.onrender.com/)
+[Live Version Link](https://spacetravelerhub.onrender.com/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -142,9 +140,9 @@ This project would be deployed using github pages:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **Rocket Page**
-- [ ] **Mission Page**
-- [ ] **Profile Page**
+- **Dragon Page**
+- **Ticket Booking page**
+- **A login Feature**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
